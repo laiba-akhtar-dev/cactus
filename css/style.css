@@ -602,13 +602,6 @@ nav.whitenav ul li a {
       position: static;
       display: none;
    }
-   .active-black a {
-      background-color: black;
-   }
-   
-
-   
-   
 
    nav.topnav.responsive ul ul {
       padding: 0;
@@ -654,6 +647,10 @@ nav.whitenav ul li a {
       top: 100%;
       font-size: 1.5rem;
    }
+   .active-black a {
+      background-color: black;
+   }
+   
    .header-transparent nav.topnav.responsive li.active-black a{
       color: white;
    }
@@ -904,6 +901,7 @@ nav.whitenav ul li a {
 
    .list {
       bottom: 1rem;
+      left: 1rem;
    }
 
    .list ul {
@@ -921,6 +919,11 @@ nav.whitenav ul li a {
 
    .content-para p {
       font-size: 1.2rem;
+   }
+
+   .vedio-as-background video {
+      height: 100vh;
+      object-fit: cover;
    }
 
 }
