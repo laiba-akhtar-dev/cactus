@@ -31,11 +31,11 @@ header {
 
 }
 
-.header-transparent nav ul li a {
+.header-transparent nav > ul>li>a{
    color: white;
 }
 
-.header-transparent .sub-menu ul li a {
+.header-transparent .dropdown-menu a {
    color: black;
 }
 
@@ -43,41 +43,6 @@ header {
    display: none;
 }
 
-@media screen and (max-width: 991px) {
-   .logo img {
-      width: auto;
-   }
-
-   .icon {
-      display: block;
-   }
-
-   nav.topnav ul {
-      display: none;
-   }
-
-   nav.topnav.responsive {
-      width: 100%;
-   }
-
-   nav.topnav.responsive .icon {
-      position: relative;
-      text-align: end;
-   }
-
-   nav.topnav.responsive ul {
-      display: grid;
-      padding: 2rem;
-      gap: 1rem;
-      text-align: left;
-      position: absolute;
-      width: 100%;
-      left: 0;
-      background: white;
-      top: 100%;
-   }
-
-}
 
 nav ul {
    display: flex;
@@ -85,7 +50,7 @@ nav ul {
    gap: 2rem;
 }
 
-nav ul li a {
+nav >ul li a {
    text-decoration: none;
    font-size: 17px;
    color: black;
@@ -94,41 +59,43 @@ nav ul li a {
    transition-duration: 1s;
 }
 
-nav ul li:hover,
 nav ul li a:hover {
    color: #B99A33;
 }
 
-.sub-menu {
+.dropdown-menu {
    display: none;
    background-color: white;
 }
 
 
-nav ul li:hover .sub-menu {
+nav ul li:hover .dropdown-menu {
    display: block;
    position: absolute;
    box-shadow: 0px 10px 15px -5px rgba(205, 203, 203, 0.91);
    border-radius: 15px 15px 15px 15px;
 }
 
-nav ul li:hover .sub-menu ul {
-   display: inline-block;
-
-}
-
-nav ul li:hover .sub-menu ul li a {
+.dropdown-menu a {
    display: block;
    padding: 1rem;
+   color: black;
 }
 
-nav ul li:hover .sub-menu ul li a:hover {
+.dropdown-menu a:first-child{
+   border-top-right-radius: 1rem;
+   border-top-left-radius: 1rem;
+}
+
+.dropdown-menu a:last-child{
+   border-bottom-right-radius: 1rem;
+   border-bottom-left-radius: 1rem;
+}
+
+.dropdown-menu a:hover {
    background: #B99A33;
    color: white;
-   border-radius: 15px 15px 15px 15px;
 }
-
-
 
 .banner {
    display: flex;
@@ -142,7 +109,6 @@ nav ul li:hover .sub-menu ul li a:hover {
 .banner-container .heading {
    font-size: 4rem;
    text-align: left;
-   font-family: 'Montserrat', sans-serif;
    font-family: 'Noto Sans', sans-serif;
    font-size: 80px;
    font-weight: 600;
@@ -535,12 +501,162 @@ nav.whitenav ul li a {
 
 }
 
+.icon-content-container {
+   display: grid;
+   grid-template-columns: 41% 59%;
+   margin-top: 4rem;
+   padding: 4rem;
+}
+
+.icon-container {
+   margin-right: 3rem;
+   ;
+}
+
+.icon-container .icon-boxes {
+   display: grid;
+   justify-items: center;
+   align-items: center;
+   margin-bottom: 1rem;
+}
+
+.icon-boxes img {
+   height: 70%;
+
+}
+
+.icon-boxes h4 {
+   font-size: 1.5rem;
+   text-align: center;
+   color: #B99A33;
+   font-weight: 100;
+}
+
+.content-detail h2 {
+   font-family: 'Noto Sans', sans-serif;
+   font-size: 5.2rem;
+   line-height: 1;
+}
+
+.content-container {
+   margin-top: 1rem;
+}
+
+.content-detail p {
+   font-family: 'Noto Sans', sans-serif;
+   font-size: 1.3rem;
+   margin-top: 1rem;
+}
+
+.btn-our-story button {
+   font-size: 1.4rem;
+   font-family: 'Noto Sans', sans-serif;
+   font-weight: 200;
+   border: 1px solid #B99A33;
+   padding: 0.3rem 1.5rem;
+   border-radius: 2rem;
+   margin-top: 7rem;
+   background-color: white;
+
+}
+
+
+
+
+
 
 
 
 /* responsive */
 
-@media only screen and (max-width: 991px) {
+
+@media screen and (max-width: 991px) {
+   .logo img {
+      width: auto;
+   }
+
+   .icon {
+      display: block;
+   }
+
+   .search-icon {
+      display: none;
+   }
+
+   nav.topnav ul {
+      display: none;
+      gap: 0.5rem;
+   }
+
+   nav ul li a,
+   nav ul ul li a {
+      display: block;
+      width: 100%;
+   }
+
+   nav.topnav.responsive ul {
+      border-radius: 1rem;
+   }
+
+   nav.topnav.responsive ul ul {
+      position: static;
+      display: none;
+   }
+   .active-black a {
+      background-color: black;
+   }
+   
+
+   
+   
+
+   nav.topnav.responsive ul ul {
+      padding: 0;
+   }
+
+   nav.topnav.responsive ul a {
+      padding: 0.5rem 1.2rem;
+   }
+
+   nav.topnav.responsive ul:hover ul {
+      display: block;
+   }
+
+   /* nav.topnav.responsive ul li:hover ul li a:hover{
+      background-color:#B99A33 ;
+      color: white;
+   } */
+
+   nav.topnav.responsive ul:hover ul li {
+      padding: 0.8rem;
+
+   }
+
+   nav.topnav.responsive {
+      width: 100%;
+   }
+
+
+   nav.topnav.responsive .icon {
+      position: relative;
+      text-align: end;
+   }
+
+   nav.topnav.responsive ul {
+      display: grid;
+      /* padding: 1rem; */
+      /* gap: 1rem; */
+      text-align: left;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      background: white;
+      top: 100%;
+      font-size: 1.5rem;
+   }
+   .header-transparent nav.topnav.responsive li.active-black a{
+      color: white;
+   }
 
    .logo {
       height: 4rem;
@@ -555,7 +671,7 @@ nav.whitenav ul li a {
       font-size: 3.8rem;
    }
 
-   nav.topnav.responsive .sub-menu ul {
+   nav.topnav.responsive .dropdown-menu {
       padding: 0rem;
    }
 
@@ -652,280 +768,284 @@ nav.whitenav ul li a {
    .second-heading h2 {
       font-size: 2.6rem;
    }
+}
 
-   @media only screen and (max-width: 767px) {
-      .banner {
-         padding: 0rem 3rem;
-         padding-top: 3rem;
-      }
+@media only screen and (max-width: 767px) {
+   .banner {
+      padding: 0rem 3rem;
+      padding-top: 3rem;
+   }
 
-      .banner-container .heading {
-         font-size: 3rem;
-         line-height: 1.3;
-      }
+   .banner-container .heading {
+      font-size: 3rem;
+      line-height: 1.3;
+   }
 
-      .discreption p {
-         font-size: 1rem;
-         padding: 0.6rem 0rem;
-      }
+   .discreption p {
+      font-size: 1rem;
+      padding: 0.6rem 0rem;
+   }
 
-      .discreption .btn button {
-         width: 27vw;
-      }
+   .discreption .btn button {
+      width: 27vw;
+   }
 
-      .sliders-content-box {
-         display: grid;
-         grid-template-columns: repeat(1, 1fr);
-         margin: 1rem;
-         padding: 0rem;
-      }
+   .sliders-content-box {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      margin: 1rem;
+      padding: 0rem;
+   }
 
-      .sliders-content {
-         padding: 0rem 2rem;
-      }
+   .sliders-content {
+      padding: 0rem 2rem;
+   }
 
-      .sliders-content h2 {
-         font-size: 2rem;
-      }
+   .sliders-content h2 {
+      font-size: 2rem;
+   }
 
-      .sliders-content p {
-         font-size: 1.1rem;
-         margin-top: 15px;
-      }
+   .sliders-content p {
+      font-size: 1.1rem;
+      margin-top: 15px;
+   }
 
-      .sliders-content .btn button {
-         max-width: 100%;
-         width: 35vw;
-         margin: 1.5rem 0rem;
-         font-size: 1.2rem;
-      }
+   .sliders-content .btn button {
+      max-width: 100%;
+      width: 35vw;
+      margin: 1.5rem 0rem;
+      font-size: 1.2rem;
+   }
 
-      .content-img img {
-         height: 388px;
-      }
+   .content-img img {
+      height: 388px;
+   }
 
-      .container1 {
-         padding: 0rem;
-      }
+   .container1 {
+      padding: 0rem;
+   }
 
-      .content-img {
-         padding: 0rem 2rem;
-      }
+   .content-img {
+      padding: 0rem 2rem;
+   }
 
-      .content-section h5 {
-         font-size: 18px;
-      }
+   .content-section h5 {
+      font-size: 18px;
+   }
 
-      .content-section h2 {
-         line-height: 1;
-         font-size: 2rem;
-      }
+   .content-section h2 {
+      line-height: 1;
+      font-size: 2rem;
+   }
 
-      .content-section p {
-         font-size: 1.2rem;
-         text-align: justify;
-      }
+   .content-section p {
+      font-size: 1.2rem;
+      text-align: justify;
+   }
 
-      .committed h2 {
-         font-size: 3rem;
-         margin: 4rem 1rem;
-      }
+   .committed h2 {
+      font-size: 3rem;
+      margin: 4rem 1rem;
+   }
 
-      .committed-para {
-         display: block;
-         margin: 1rem;
-      }
+   .committed-para {
+      display: block;
+      margin: 1rem;
+   }
 
-      .committed-para p {
-         font-size: 1.2rem;
-
-      }
-
-      .committed-para .btn button {
-         width: 35vw;
-      }
-
-      .grid-container {
-         margin: 1rem;
-      }
-
-      .grid-box-container {
-         display: grid;
-         grid-template-columns: repeat(1, 1fr);
-      }
-
-      .grid-container h2 {
-         font-size: 2rem;
-      }
-
-      .grid-box {
-         height: 400px
-      }
-
-      .grid-box img {
-         object-fit: cover;
-      }
-
-      .layers {
-         padding: 2rem;
-      }
-
-      .layers h2 {
-         font-size: 3rem;
-      }
-
-      .layers p {
-         font-size: 20px;
-         margin: 1rem 0rem;
-      }
-
-      .footer-section {
-         font-size: 1.3rem;
-      }
-
-      /* our story responsive */
-
-      .list {
-         bottom: 1rem;
-      }
-
-      .list ul {
-         display: flex;
-         font-size: 3.2rem;
-      }
-      .double-heading-paragraph{
-         max-width: 100%;
-      }
-      .second-heading h2{
-         font-size: 2rem
-      }
-      .content-para p {
-         font-size: 1.2rem;
-      }
+   .committed-para p {
+      font-size: 1.2rem;
 
    }
 
-   @media only screen and (max-width: 575px) {
-      .btn button {
-         padding: 0.2rem;
-      }
-
-      .content-img {
-         padding: 0rem 0.6rem;
-      }
-
-      .footer-panel {
-         display: grid;
-         grid-template-columns: repeat(1, 1fr);
-         gap: 2rem;
-      }
-
-      .vedio-as-background video {
-         height: 100vh;
-         object-fit: cover;
-      }
-
-      .list {
-         left: 2rem;
-      }
-
-      .list ul {
-         display: block;
-      }
-
+   .committed-para .btn button {
+      width: 35vw;
    }
 
-   @media only screen and (max-width: 414px) {
-      .titleimg img {
-         display: none;
-      }
-
-      header {
-         padding: 0rem 1rem;
-      }
-
-      .logo {
-         height: 2rem;
-      }
-
-      .banner {
-         display: block;
-         padding: 3rem 1rem;
-      }
-
-      .discreption {
-         padding: 0rem;
-      }
-
-      .discreption .btn button {
-         width: 40vw;
-      }
-
-      .sliders-content {
-         padding: 0rem 1rem;
-      }
-
-      .sliders-content .btn button {
-         width: 58vw;
-         margin-bottom: 4rem;
-      }
-
-      .sliders-content p {
-         margin-top: 33px;
-      }
-
-      .content-section {
-         padding: 3rem 1rem;
-      }
-
-      .content-section .btn button {
-         width: 60vw;
-      }
-
-      .committed h2 {
-         font-size: 2.9rem;
-         margin: 4rem 0.6rem;
-      }
-
-      .layers p {
-         margin: 0rem;
-
-      }
+   .grid-container {
+      margin: 1rem;
    }
 
-   @media only screen and (max-width: 375px) {
-      .layers p {
-         font-size: 1rem;
-      }
-
-      .layers h2 {
-         font-size: 2rem;
-      }
+   .grid-box-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
    }
 
-   @media only screen and (max-width:1000px) {
-      .mySlides .fade img {
-         object-fit: cover;
-      }
-
-      .content {
-         display: grid;
-         grid-template-columns: repeat (1, fr);
-      }
-
-      .content-img img {
-         width: 100%;
-         height: 388px;
-         box-shadow: none;
-         object-fit: cover;
-      }
-
-      .content-section {
-         max-width: 100%;
-      }
-
-      .content-section .btn button {
-         width: 55vw;
-         font-size: 1.2rem;
-      }
+   .grid-container h2 {
+      font-size: 2rem;
    }
+
+   .grid-box {
+      height: 400px
+   }
+
+   .grid-box img {
+      object-fit: cover;
+   }
+
+   .layers {
+      padding: 2rem;
+   }
+
+   .layers h2 {
+      font-size: 3rem;
+   }
+
+   .layers p {
+      font-size: 20px;
+      margin: 1rem 0rem;
+   }
+
+   .footer-section {
+      font-size: 1.3rem;
+   }
+
+   /* our story responsive */
+
+   .list {
+      bottom: 1rem;
+   }
+
+   .list ul {
+      display: flex;
+      font-size: 3.2rem;
+   }
+
+   .double-heading-paragraph {
+      max-width: 100%;
+   }
+
+   .second-heading h2 {
+      font-size: 2rem
+   }
+
+   .content-para p {
+      font-size: 1.2rem;
+   }
+
+}
+
+@media only screen and (max-width: 575px) {
+   .btn button {
+      padding: 0.2rem;
+   }
+
+   .content-img {
+      padding: 0rem 0.6rem;
+   }
+
+   .footer-panel {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2rem;
+   }
+
+   .vedio-as-background video {
+      height: 100vh;
+      object-fit: cover;
+   }
+
+   .list {
+      left: 2rem;
+   }
+
+   .list ul {
+      display: block;
+   }
+
+}
+
+@media only screen and (max-width: 414px) {
+   .titleimg img {
+      display: none;
+   }
+
+   header {
+      padding: 0rem 1rem;
+   }
+
+   .logo {
+      height: 2rem;
+   }
+
+   .banner {
+      display: block;
+      padding: 3rem 1rem;
+   }
+
+   .discreption {
+      padding: 0rem;
+   }
+
+   .discreption .btn button {
+      width: 40vw;
+   }
+
+   .sliders-content {
+      padding: 0rem 1rem;
+   }
+
+   .sliders-content .btn button {
+      width: 58vw;
+      margin-bottom: 4rem;
+   }
+
+   .sliders-content p {
+      margin-top: 33px;
+   }
+
+   .content-section {
+      padding: 3rem 1rem;
+   }
+
+   .content-section .btn button {
+      width: 60vw;
+   }
+
+   .committed h2 {
+      font-size: 2.9rem;
+      margin: 4rem 0.6rem;
+   }
+
+   .layers p {
+      margin: 0rem;
+
+   }
+}
+
+@media only screen and (max-width: 375px) {
+   .layers p {
+      font-size: 1rem;
+   }
+
+   .layers h2 {
+      font-size: 2rem;
+   }
+}
+
+@media only screen and (max-width:1000px) {
+   .mySlides .fade img {
+      object-fit: cover;
+   }
+
+   .content {
+      display: grid;
+      grid-template-columns: repeat (1, fr);
+   }
+
+   .content-img img {
+      width: 100%;
+      height: 388px;
+      box-shadow: none;
+      object-fit: cover;
+   }
+
+   .content-section {
+      max-width: 100%;
+   }
+
+   .content-section .btn button {
+      width: 55vw;
+      font-size: 1.2rem;
+   }
+}
