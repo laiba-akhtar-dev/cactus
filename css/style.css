@@ -1094,8 +1094,10 @@ nav.whitenav ul li a {
    .our-mission-heading-box h2 {
       font-size: 1.9rem;
    }
+
    .our-mission-content-box p {
       font-size: 1.1rem;
+   }
 }
 
 
@@ -1120,7 +1122,7 @@ nav.whitenav ul li a {
    }
 
    .list {
-      left: 2rem;
+      left: 1rem;
    }
 
    .list ul {
@@ -1202,6 +1204,10 @@ nav.whitenav ul li a {
 
    .layers h2 {
       font-size: 2rem;
+   }
+
+   .list {
+      left: 1rem;
    }
 }
 
