@@ -1272,8 +1272,11 @@ nav.whitenav ul li a {
    }
 
    .list {
-      left: 0em;
+      left: 0.5rem;
    }
+   .list ul {
+      font-size: 2.2rem;
+  }
 }
 
 
