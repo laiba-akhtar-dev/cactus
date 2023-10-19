@@ -1238,6 +1238,9 @@ nav.whitenav ul li a {
       margin: 0rem;
 
    }
+   .list {
+      left: 0.5rem;
+   }
 
    .content-layer {
       min-width: 100%;
