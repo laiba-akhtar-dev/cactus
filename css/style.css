@@ -1272,9 +1272,10 @@ nav.whitenav ul li a {
    }
 
    .list {
-      left: 1rem;
+      left: 0em;
    }
 }
+
 
 @media only screen and (max-width:1000px) {
    .mySlides .fade img {
