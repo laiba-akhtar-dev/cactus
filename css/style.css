@@ -786,7 +786,27 @@ nav.whitenav ul li a {
    border-radius: 2rem;
    box-shadow: 0 0.5rem 0.5rem 0.1rem rgb(215, 208, 208);
 }
-
+/* blog section  */
+.blog {
+   padding: 7rem;
+  min-height: 80vh;
+}
+.blog-section{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    
+}
+.blog-box1 h2 {
+   font-family: 'Noto Sans', sans-serif;
+   font-size: 3.5rem;
+  
+}
+.blog-box1 p {
+   font-size: 1.4rem;
+   font-family: 'Noto Sans', sans-serif;
+   max-width: 74%;
+  
+}
 
 /* responsive */
 
