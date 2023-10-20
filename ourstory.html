@@ -16,7 +16,7 @@
             <a href="index.html"><img src="imges/logo.png" alt="Cactus"></a>
         </div>
         <nav class="topnav" id="myTopnav">
-            <ul>
+            <ul class="nav-list">
                 <li class="active-black"><a href="#">Our Story</a></li>
                 <li>
                     <a href="#">Our Brands <i class="fa fa-caret-down" aria-hidden="true"></i></a>
@@ -27,7 +27,7 @@
                     </ul>
                 </li>
                 <li><a href="#">Our Services</a></li>
-                <li><a href="#">Events</a></li>
+                <li><a href="ourevents.html">Events</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact</a></li>
                 <li class="search-icon"><a href="#"><i class="fa fa-search fa-lg" aria-hidden="true"></i></a></li>
@@ -166,12 +166,31 @@
         <div class="community-box">
             <div class="community-head">
                 <div class="community-empty">
-                    
+
                 </div>
                 <h2>Our communities, our collective responsibility.</h2>
             </div>
             <div class="community-image">
                 <img src="imges/community-img.png" alt="farmer">
+            </div>
+        </div>
+    </section>
+    <!-- section 7 -->
+    <section class="commitment-section">
+        <div class="commitment-box">
+            <div class="commitment-head">
+                <h5>OUR COMMITMENT</h5>
+                <p>A business of any sorts is only viable through a long chain of suppliers who work tirelessly to
+                    provide us with the support needed to succeed. As such, we are committed to improving our
+                    communities’ quality of life through social, economical and environmental initiatives.</p>
+                <p>From supporting coffee and tobacco farmers, to creating recyclable, low carbon footprint products, we
+                    continue our commitment to a safe future for all.</p>
+                <div class="btn-our-story">
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="commitment-empty">
+
             </div>
         </div>
     </section>
@@ -239,4 +258,12 @@
             x.className = "topnav";
         }
     }
+    // let list_header = document.querySelectorAll('nav.topnav > ul >li')
+    // for (let i = 0; i < list_header.length; i++) {
+    //     list_header[i].addEventListener('click', () => {
+    //         list_header[i].classList.toggle('active');
+    //         console.log('cliked element');
+            
+    //     })
+    // }
 </script>
