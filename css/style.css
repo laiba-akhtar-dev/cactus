@@ -1893,11 +1893,12 @@ textarea:focus-visible {
    .contact-para {
       gap: 5rem;
    }
+
    /* blog  */
    .blog-section {
       grid-template-columns: repeat(1, 1fr);
-  }
- 
+   }
+
 }
 
 
@@ -2009,6 +2010,10 @@ textarea:focus-visible {
 
    .contact-para {
       gap: 0rem;
+   }
+
+   .map-contain {
+      height: 70vh;
    }
 }
 
