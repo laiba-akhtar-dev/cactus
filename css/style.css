@@ -1091,6 +1091,39 @@ textarea:focus-visible {
    margin-top: 2rem;
 }
 
+/* services */
+.swiper-container {
+   width: 100%;
+   height: 100vh;
+
+}
+
+.swiper-slide img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.service-img-swiper {
+   position: relative;
+   z-index: 0;
+}
+
+.services-head {
+   position: absolute;
+   bottom: 10rem;
+   left: 4rem;
+   z-index: 1;
+   width: 65%;
+}
+
+.services-head h2 {
+   color: white;
+   font-family: 'Noto Sans', sans-serif;
+   font-size: 5.9rem;
+   line-height: 1;
+}
+
 
 /* responsive */
 
@@ -1140,9 +1173,6 @@ textarea:focus-visible {
    nav.topnav.responsive ul ul {
       position: static;
       display: none;
-   }
-
-   nav.topnav.responsive ul ul {
       padding: 0;
    }
 
@@ -1490,6 +1520,16 @@ textarea:focus-visible {
       max-width: 83%;
       margin-top: 1rem;
    }
+
+   /* services  */
+   .services-head {
+      bottom: 2rem;
+      left: 1rem;
+   }
+
+   .services-head h2 {
+      font-size: 4.9rem;
+   }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1835,6 +1875,14 @@ textarea:focus-visible {
    .blog-box1 h2 {
       font-size: 1.9rem;
    }
+   /* services  */
+   .services-head {
+      width: 70%;
+      bottom: 8rem;
+   }
+   .services-head h2 {
+      font-size: 3rem;
+   }
 }
 
 @media only screen and (max-width: 575px) {
@@ -1897,6 +1945,10 @@ textarea:focus-visible {
    /* blog  */
    .blog-section {
       grid-template-columns: repeat(1, 1fr);
+   }
+   /* services  */
+   .services-head {
+      width: 100%;
    }
 
 }
@@ -2015,6 +2067,10 @@ textarea:focus-visible {
    .map-contain {
       height: 70vh;
    }
+   /* services  */
+   .services-head  {
+      bottom: 2rem;
+   }
 }
 
 @media only screen and (max-width: 375px) {
@@ -2033,6 +2089,15 @@ textarea:focus-visible {
    .list ul {
       font-size: 2.2rem;
    }
+   /* services  */
+
+   .services-head {
+      width:auto;
+      left: 0.5rem;
+   }
+   .services-head h2 {
+      font-size: 2.8rem;
+  }
 }
 
 
