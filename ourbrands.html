@@ -31,7 +31,7 @@
                 <li><a href="#">Our Services</a></li>
                 <li><a href="ourevents.html">Events</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li><a href="#"><i class="fa fa-search fa-lg" aria-hidden="true"></a></i></li>
             </ul>
         </nav>
@@ -304,5 +304,16 @@ function displayImages() {
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
         setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+</script>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
     }
 </script>

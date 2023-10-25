@@ -1476,6 +1476,20 @@ textarea:focus-visible {
       gap: 31rem;
    }
 
+   /* blog */
+   .blog-box1 h2 {
+      font-size: 2.5rem;
+   }
+
+   .blog {
+      padding: 7rem 1rem;
+   }
+
+   .blog-box1 p {
+      font-size: 1.4rem;
+      max-width: 83%;
+      margin-top: 1rem;
+   }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1811,8 +1825,17 @@ textarea:focus-visible {
    .map-address p {
       font-size: 1.2rem;
    }
-}
 
+   /* blog  */
+   .blog-box1 p {
+      font-size: 1.2rem;
+      max-width: 100%;
+   }
+
+   .blog-box1 h2 {
+      font-size: 1.9rem;
+   }
+}
 
 @media only screen and (max-width: 575px) {
    .btn button {
@@ -1870,8 +1893,13 @@ textarea:focus-visible {
    .contact-para {
       gap: 5rem;
    }
-
+   /* blog  */
+   .blog-section {
+      grid-template-columns: repeat(1, 1fr);
+  }
+ 
 }
+
 
 @media only screen and (max-width: 414px) {
    .titleimg img {
@@ -1974,12 +2002,14 @@ textarea:focus-visible {
       max-width: 100%;
       font-size: 1.7rem;
    }
+
    .contact-content p {
       width: 100%;
-  }
-  .contact-para {
-   gap: 0rem;
-}
+   }
+
+   .contact-para {
+      gap: 0rem;
+   }
 }
 
 @media only screen and (max-width: 375px) {
