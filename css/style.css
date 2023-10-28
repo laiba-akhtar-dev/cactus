@@ -548,10 +548,14 @@ nav.whitenav ul li a {
    font-family: 'Noto Sans', sans-serif;
    font-weight: 200;
    border: 1px solid #B99A33;
-   padding: 0.3rem 1.5rem;
+   padding: 0.3rem 3.5rem;
    border-radius: 2rem;
    margin: 2rem 0rem;
    background-color: white;
+}
+.btn-our-story a {
+   text-decoration: none;
+   color: #B99A33;
 }
 
 .icon-boxes {
@@ -1124,6 +1128,110 @@ textarea:focus-visible {
    line-height: 1;
 }
 
+.our-services-section {
+   padding: 0rem 4rem;
+   margin: 4rem 0rem;
+}
+
+.services-box1 {
+   display: flex;
+   gap: 24rem;
+}
+
+.services-content h5 {
+   font-size: 1.4rem;
+   color: #B99A33;
+   font-family: 'Noto Sans', sans-serif;
+   font-weight: 500;
+   margin-bottom: 0.5rem;
+}
+
+.services-content p {
+   font-family: 'Noto Sans', sans-serif;
+   font-size: 1.2rem;
+   margin-bottom: 0.5rem;
+}
+
+.services-empty {
+   width: 100%;
+}
+
+.services-content2 {
+   display: flex;
+}
+
+.services-items-para h2 {
+   font-size: 3.4rem;
+   font-family: 'Noto Sans', sans-serif;
+   line-height: 1.1;
+   margin-bottom: 1rem;
+}
+
+.services-paragrapgh p {
+   font-family: 'Noto Sans', sans-serif;
+   font-size: 1.4rem;
+}
+
+.services-paragrapgh {
+   display: flex;
+}
+
+.services-emptytwo {
+   width: 30%;
+}
+
+.services-list-container {
+   display: flex;
+   gap: 9rem;
+}
+
+.services-container {
+   display: grid;
+}
+
+.services-img-container {
+   display: flex;
+   gap: 2.5rem;
+
+}
+
+.img-walls img {
+   border-radius: 2rem;
+   box-shadow: 0 -0.5rem 1.5rem 0.1rem rgb(215, 208, 208);
+}
+
+.our-services-para p {
+   font-size: 1.3rem;
+   font-family: 'Noto Sans', sans-serif;
+   text-align: justify;
+}
+
+.our-services-para {
+   display: flex;
+   gap: 22.9rem;
+   margin: 2rem 0rem;
+}
+
+.services-items ul li {
+   font-family: 'Noto Sans', sans-serif;
+   list-style: circle;
+   list-style-position: outside;
+   margin-bottom: 0.5rem;
+   font-size: 23px;
+   padding-left: 0.5rem;
+}
+
+.services-items ul li::marker {
+   color: #B99A33;
+   font-size: 1.2rem;
+   content: "◯";
+   margin: 1rem;
+
+}
+
+.services-items ul {
+   margin-left: 22px;
+}
 
 /* responsive */
 
@@ -1530,6 +1638,34 @@ textarea:focus-visible {
    .services-head h2 {
       font-size: 4.9rem;
    }
+
+   .our-services-section {
+      padding: 0rem 0.5rem;
+   }
+
+   .services-box1 {
+      gap: 10rem;
+   }
+
+   .services-items-para h2 {
+      font-size: 2.6rem;
+   }
+
+   .our-services-para {
+      gap: 14.9rem;
+   }
+
+   .services-list-container {
+      gap: 2rem;
+   }
+
+   .services-items ul li::marker {
+      font-size: 1rem;
+   }
+
+   .services-items ul li {
+      font-size: 19px;
+   }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1875,14 +2011,57 @@ textarea:focus-visible {
    .blog-box1 h2 {
       font-size: 1.9rem;
    }
+
    /* services  */
    .services-head {
       width: 70%;
       bottom: 8rem;
    }
+
    .services-head h2 {
       font-size: 3rem;
    }
+
+   .services-box1 {
+      display: block;
+   }
+
+   .services-content2 {
+      display: block;
+   }
+
+   .services-items-para h2 {
+      font-size: 2rem;
+   }
+
+   .services-paragrapgh {
+      gap: 0rem;
+      text-align: justify;
+   }
+
+   .services-paragrapgh p {
+      font-size: 1.2rem;
+   }
+
+   .services-img-container {
+      display: grid;
+   }
+
+   .our-services-para p {
+      font-size: 1.1rem;
+   }
+
+   .our-services-para {
+      display: block;
+   }
+   .services-list-container {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 0rem;
+  }
+  .services-items ul li::marker {
+   font-size: 1.2rem;
+}
 }
 
 @media only screen and (max-width: 575px) {
@@ -1946,10 +2125,12 @@ textarea:focus-visible {
    .blog-section {
       grid-template-columns: repeat(1, 1fr);
    }
+
    /* services  */
    .services-head {
       width: 100%;
    }
+
 
 }
 
@@ -2067,10 +2248,24 @@ textarea:focus-visible {
    .map-contain {
       height: 70vh;
    }
+
    /* services  */
-   .services-head  {
+   .services-head {
       bottom: 2rem;
    }
+
+   .services-content h5 {
+      font-size: 1.2rem;
+      margin-bottom: 0.9rem;
+   }
+
+   .services-content p {
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+   }
+   .services-items ul li {
+      font-size: 17px;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -2089,15 +2284,17 @@ textarea:focus-visible {
    .list ul {
       font-size: 2.2rem;
    }
+
    /* services  */
 
    .services-head {
-      width:auto;
+      width: auto;
       left: 0.5rem;
    }
+
    .services-head h2 {
       font-size: 2.8rem;
-  }
+   }
 }
 
 
