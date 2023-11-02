@@ -1417,7 +1417,7 @@ textarea:focus-visible {
    height: 100%;
    object-fit: cover;
    border-radius: 2rem;
-   box-shadow: 0 0.5rem 1.5rem 0.1rem rgb(240, 232, 232);
+   box-shadow: 0 0.5rem 1.5rem 0.1rem rgba(206, 201, 201, 0.904);
 }
 
 .aroma-demo-box-second {
@@ -1482,6 +1482,12 @@ textarea:focus-visible {
    bottom: 9px;
 }
 
+.btn-our-aroma button a {
+   text-decoration: none;
+   color: white;
+}
+
+
 .aroma-items:hover .item-layers {
    opacity: 1;
 }
@@ -1506,6 +1512,64 @@ textarea:focus-visible {
 .aroma-cart-title {
    display: grid;
    gap: 1rem;
+}
+
+.ecstacy-contain {
+   display: grid;
+   grid-template-columns: 60% 40%;
+   align-items: center;
+}
+
+.ecstacy-logo-img img {
+   width: 100%;
+   height: 100%;
+}
+
+.ecstacy-header {
+   max-width: 80%;
+}
+
+.ecstacy-header h2 {
+   font-family: 'Noto Sans', sans-serif;
+   font-size: 5.2rem;
+   line-height: 1;
+}
+
+.ecstacy-cocktail {
+   display: grid;
+   grid-template-columns: 70% auto;
+}
+
+.cocktail-flav {
+   display: grid;
+   gap: 1rem;
+}
+
+.ecs-head h5 {
+   font-size: 1.4rem;
+   color: #B99A33;
+   font-family: 'Noto Sans', sans-serif;
+   font-weight: 500;
+   margin-bottom: 0.5rem;
+}
+
+.ecs-content h2 {
+   font-size: 55px;
+   font-family: 'Noto Sans', sans-serif;
+   line-height: 1.2;
+}
+
+.ecs-para {
+   max-width: 65%;
+}
+
+.ecs-para p {
+   font-size: 1.4rem;
+   font-family: 'Noto Sans', sans-serif;
+}
+.aroma-items-carts-container {
+   display: grid;
+   gap: 2rem;
 }
 
 /* responsive */
@@ -1995,6 +2059,22 @@ textarea:focus-visible {
    .aroma-items img {
       width: 40%;
    }
+
+   .ecstacy-header h2 {
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 4.2rem;
+      line-height: 1;
+   }
+
+   .ecs-content h2 {
+      font-size: 43px;
+      font-family: 'Noto Sans', sans-serif;
+      line-height: 1.2;
+   }
+
+   .ecs-para {
+      max-width: 100%;
+   }
 }
 
 @media only screen and (max-width: 767px) {
@@ -2437,10 +2517,46 @@ textarea:focus-visible {
       width: 22%;
    }
 
+   .ecstacy-contain {
+      grid-template-columns: auto;
+   }
 
+   .ecstacy-header {
+      max-width: 100%;
+   }
 
+   .ecstacy-header h2 {
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 3rem;
+      margin-bottom: 3rem;
+   }
 
+   .ecstacy-logo-img img {
+      padding-left: 8rem;
+   }
+
+   .ecstacy-cocktail {
+      grid-template-columns: auto;
+   }
+
+   .ecs-content h2 {
+      font-size: 32px;
+   }
+   .ecs-para p {
+      font-size: 1.2rem;
+  }
+  .aroma-cart-title h2 {
+   font-size: 35px;
+   text-align: center;
 }
+.aroma-item-gram h2 {
+   font-size: 35px;
+   text-align: center;
+}
+}
+
+
+
 
 @media only screen and (max-width: 575px) {
    .btn button {
@@ -2680,9 +2796,10 @@ textarea:focus-visible {
    .aroming-logo-box img {
       margin-left: -18rem;
    }
+
    .aroming-head {
       margin-left: -17rem;
-  }
+   }
 }
 
 @media only screen and (max-width: 375px) {
@@ -2744,13 +2861,16 @@ textarea:focus-visible {
    .logo img {
       height: 100%;
    }
+
    .aroming-logo-box img {
       margin-left: -18rem;
-  }
-  .aroming-head {
-   margin-left: -16rem;
-}
-.aroming-contain {
-   grid-template-columns: 100% 0%;
-}
+   }
+
+   .aroming-head {
+      margin-left: -16rem;
+   }
+
+   .aroming-contain {
+      grid-template-columns: 100% 0%;
+   }
 }
