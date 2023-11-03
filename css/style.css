@@ -68,6 +68,7 @@ nav>ul>li a:hover {
    background-color: white;
 }
 
+
 .molas-side-menu {
    display: none;
 }
@@ -1721,6 +1722,7 @@ section.vape-section {
 
    nav.topnav.responsive ul {
       border-radius: 1rem;
+      z-index: 1;
    }
 
    .nav-list>li:nth-child(2) {
@@ -1780,6 +1782,50 @@ section.vape-section {
       font-size: 1.5rem;
    }
 
+   .molas-hover {
+      position: relative;
+   }
+
+   .molas-side-menu a {
+      display: none;
+   }
+
+   .molas-hover:hover .molas-side-menu a {
+      display: block;
+   }
+
+   .molas-hover:hover .molas-side-menu {
+      position: static;
+   }
+
+   .e-liq-hover {
+      position: relative;
+   }
+
+   .e-liq-side-menu a {
+      display: none;
+   }
+
+   .e-liq-hover:hover .e-liq-side-menu a {
+      display: block;
+   }
+
+   .e-liq-hover:hover .e-liq-side-menu {
+       position: static;
+   }
+   .coffee-hover {
+      position: relative;
+   }
+   .coffee-side-menu a {
+      display: none;
+   }
+   .coffee-hover:hover .coffee-side-menu a {
+      display: block;
+   }
+   .coffee-hover:hover .coffee-side-menu {
+      position: static;
+   }
+   
    .active-black a {
       background-color: black;
    }
@@ -1803,6 +1849,7 @@ section.vape-section {
 
    nav.topnav.responsive .dropdown-menu {
       padding: 0rem;
+      width: 100%;
    }
 
    nav ul li:hover .sub-menu {
@@ -2230,14 +2277,16 @@ section.vape-section {
    .rose-gem-header h2 {
       font-size: 30px;
    }
+
    .rose-gems-para {
       display: flex;
       gap: 17rem;
-  }
-  .cart-items-of-rose {
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-}
+   }
+
+   .cart-items-of-rose {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+   }
 }
 
 @media only screen and (max-width: 767px) {
@@ -2757,35 +2806,43 @@ section.vape-section {
    .aroma-items.dr-img.gr-img img {
       width: 6%;
    }
+
    .rose-contain {
-      grid-template-columns: repeat(1,1fr);
-     gap: 3rem;
-  }
+      grid-template-columns: repeat(1, 1fr);
+      gap: 3rem;
+   }
+
    .rose-yamen-content h2 {
       font-size: 40px;
       max-width: 100%;
-  }
-  .rose-gem-header h2 {
-   font-size: 33px;
-}
-.rose-gems-para {
-   gap: 0rem;
-}
-.aroma-demo-container {
-   grid-template-columns: repeat(1, 1fr);
-}
-.aroma-grid-contain {
-   display: grid;
-   grid-template-columns: auto;
-   gap: 1rem;
-}
-.cart-items-of-rose {
-   grid-template-columns: repeat(1, 1fr);
-}
-.aroma-items.rose-items img {
-   width: 50%;
+   }
 
-}
+   .rose-gem-header h2 {
+      font-size: 33px;
+   }
+
+   .rose-gems-para {
+      gap: 0rem;
+   }
+
+   .aroma-demo-container {
+      grid-template-columns: repeat(1, 1fr);
+   }
+
+   .aroma-grid-contain {
+      display: grid;
+      grid-template-columns: auto;
+      gap: 1rem;
+   }
+
+   .cart-items-of-rose {
+      grid-template-columns: repeat(1, 1fr);
+   }
+
+   .aroma-items.rose-items img {
+      width: 50%;
+
+   }
 }
 
 
@@ -3045,9 +3102,10 @@ section.vape-section {
    .aroma-items.dr-img img {
       width: 15%;
    }
+
    .aroma-items.rose-items img {
       width: 90%;
-  }
+   }
 }
 
 @media only screen and (max-width: 375px) {
@@ -3081,14 +3139,16 @@ section.vape-section {
    .aroma-items.dr-img.gr-img img {
       width: 12%;
    }
+
    .rose-gem-header h2 {
       font-size: 32px;
-  }
-  .rose-gems-para p {
-   font-family: 'Noto Sans', sans-serif;
-   font-size: 18px;
-   text-align: justify;
-}
+   }
+
+   .rose-gems-para p {
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 18px;
+      text-align: justify;
+   }
 }
 
 
