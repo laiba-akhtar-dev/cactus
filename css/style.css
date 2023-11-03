@@ -1407,9 +1407,8 @@ textarea:focus-visible {
 
 .aroma-grid-contain {
    display: grid;
-   grid-template-columns: 1.5fr 1fr;
+   grid-template-columns: 53% 44%;
    gap: 1rem;
-   /* height: 17rem; */
 }
 
 .aroma-img-boxes img {
@@ -1456,7 +1455,7 @@ textarea:focus-visible {
    left: 0;
    padding: 2rem 0.8rem;
    width: 100%;
-   background: rgba(7, 5, 5, 0.761);
+   background: rgb(7 5 5 / 95%);
    /* backdrop-filter: blur(4px); */
    border-radius: 35px 35px 35px 35px;
    color: white;
@@ -1567,9 +1566,130 @@ textarea:focus-visible {
    font-size: 1.4rem;
    font-family: 'Noto Sans', sans-serif;
 }
+
 .aroma-items-carts-container {
    display: grid;
    gap: 2rem;
+}
+
+.vapes-contain {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   align-items: center;
+}
+
+.vapes-header h2 {
+   font-size: 80px;
+   line-height: 1;
+   font-family: 'Noto Sans', sans-serif;
+}
+
+.aroma-items.dr-img img {
+   width: 25%;
+}
+
+.rose-items img {
+   width: 100%;
+}
+
+.aroma-items.rose-items img {
+   width: 88%;
+   overflow: hidden;
+   height: 164px;
+   object-fit: cover;
+}
+
+.vape-content {
+   display: grid;
+   grid-template-columns: 63% 37%;
+}
+
+.vape-btn-box {
+   text-align: center;
+   display: grid;
+   align-items: center;
+}
+
+.vape-header h2 {
+   font-size: 60px;
+   font-family: 'Noto Sans', sans-serif;
+   line-height: 70px;
+}
+
+.vape-container {
+   display: grid;
+   gap: 1rem;
+}
+
+.vape-title h5 {
+   font-family: 'Noto Sans', sans-serif;
+   font-size: 22px;
+   color: #B99A33;
+}
+
+section.vape-section {
+   margin: 4rem 0rem;
+}
+
+.aroma-items.dr-img.gr-img img {
+   width: 17%;
+}
+
+.rose-contain {
+   display: grid;
+   grid-template-columns: auto 38%;
+   align-items: center;
+}
+
+.rose-logo-img img {
+   width: 100%;
+   height: 100%;
+   border-radius: 2rem;
+}
+
+.rose-yamen-content h2 {
+   font-family: 'Noto Sans', sans-serif;
+   font-size: 85px;
+   max-width: 86%;
+   line-height: 1;
+}
+
+.rose-gems {
+   display: grid;
+   grid-template-columns: auto 31%;
+}
+
+.rose-gems-box {
+   display: grid;
+   gap: 1.5rem;
+}
+
+.rose-gems-title h5 {
+   font-family: 'Noto Sans', sans-serif;
+   font-size: 22px;
+   color: #B99A33;
+}
+
+.rose-gem-header h2 {
+   font-family: 'Noto Sans', sans-serif;
+   font-size: 60px;
+   line-height: 1.1;
+}
+
+.rose-gems-para {
+   display: flex;
+   gap: 7rem;
+}
+
+.rose-gems-para p {
+   font-family: 'Noto Sans', sans-serif;
+   font-size: 20px;
+}
+
+.cart-items-of-rose {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 1rem;
 }
 
 /* responsive */
@@ -2045,11 +2165,11 @@ textarea:focus-visible {
    }
 
    .aroma-demo-container {
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(2, 1fr);
    }
 
    .aroma-grid-contain {
-      grid-template-columns: auto;
+      grid-template-columns: auto auto;
    }
 
    .cart-items-of-aroma {
@@ -2075,6 +2195,49 @@ textarea:focus-visible {
    .ecs-para {
       max-width: 100%;
    }
+
+   .vapes-logo-img img {
+      margin-left: -8rem;
+   }
+
+   .vapes-header h2 {
+      font-size: 65px;
+      margin-left: -8rem;
+   }
+
+   .vape-header h2 {
+      font-size: 45px;
+      line-height: 1.1em;
+   }
+
+   .aroma-items.dr-img img {
+      width: 13%;
+   }
+
+   .aroma-items.dr-img.gr-img img {
+      width: 10%;
+   }
+
+   .rose-yamen-content h2 {
+      font-size: 65px;
+   }
+
+   .rose-gems {
+      display: grid;
+      grid-template-columns: auto;
+   }
+
+   .rose-gem-header h2 {
+      font-size: 30px;
+   }
+   .rose-gems-para {
+      display: flex;
+      gap: 17rem;
+  }
+  .cart-items-of-rose {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+}
 }
 
 @media only screen and (max-width: 767px) {
@@ -2542,16 +2705,86 @@ textarea:focus-visible {
    .ecs-content h2 {
       font-size: 32px;
    }
+
    .ecs-para p {
       font-size: 1.2rem;
+   }
+
+   .aroma-cart-title h2 {
+      font-size: 35px;
+      text-align: center;
+   }
+
+   .aroma-item-gram h2 {
+      font-size: 35px;
+      text-align: center;
+   }
+
+   .vapes-header h2 {
+      font-size: 44px;
+      margin-left: 0rem;
+   }
+
+   .vapes-contain {
+      display: flex;
+      align-items: none;
+      flex-direction: column-reverse;
+   }
+
+   .vapes-logo-img img {
+      margin-left: 0rem;
+   }
+
+   .vape-content {
+      display: grid;
+      grid-template-columns: auto;
+   }
+
+   .vape-header h2 {
+      font-size: 31px;
+      line-height: 1.1em;
+   }
+
+   .vape-btn-box {
+      display: grid;
+      text-align: start;
+   }
+
+   .aroma-items.dr-img img {
+      width: 8%;
+   }
+
+   .aroma-items.dr-img.gr-img img {
+      width: 6%;
+   }
+   .rose-contain {
+      grid-template-columns: repeat(1,1fr);
+     gap: 3rem;
   }
-  .aroma-cart-title h2 {
-   font-size: 35px;
-   text-align: center;
+   .rose-yamen-content h2 {
+      font-size: 40px;
+      max-width: 100%;
+  }
+  .rose-gem-header h2 {
+   font-size: 33px;
 }
-.aroma-item-gram h2 {
-   font-size: 35px;
-   text-align: center;
+.rose-gems-para {
+   gap: 0rem;
+}
+.aroma-demo-container {
+   grid-template-columns: repeat(1, 1fr);
+}
+.aroma-grid-contain {
+   display: grid;
+   grid-template-columns: auto;
+   gap: 1rem;
+}
+.cart-items-of-rose {
+   grid-template-columns: repeat(1, 1fr);
+}
+.aroma-items.rose-items img {
+   width: 50%;
+
 }
 }
 
@@ -2647,6 +2880,14 @@ textarea:focus-visible {
 
    .aroming-logo-box img {
       margin-left: -25rem;
+   }
+
+   .vape-title h5 {
+      font-size: 18px;
+   }
+
+   .aroma-items.dr-img.gr-img img {
+      width: 8%;
    }
 
 }
@@ -2800,6 +3041,13 @@ textarea:focus-visible {
    .aroming-head {
       margin-left: -17rem;
    }
+
+   .aroma-items.dr-img img {
+      width: 15%;
+   }
+   .aroma-items.rose-items img {
+      width: 90%;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -2829,6 +3077,18 @@ textarea:focus-visible {
    .services-head h2 {
       font-size: 2.8rem;
    }
+
+   .aroma-items.dr-img.gr-img img {
+      width: 12%;
+   }
+   .rose-gem-header h2 {
+      font-size: 32px;
+  }
+  .rose-gems-para p {
+   font-family: 'Noto Sans', sans-serif;
+   font-size: 18px;
+   text-align: justify;
+}
 }
 
 
