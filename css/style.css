@@ -1693,6 +1693,42 @@ section.vape-section {
    gap: 1rem;
 }
 
+.zeus-section {
+   margin: 1rem 0rem;
+   padding: 0rem 4rem;
+   position: relative;
+   z-index: 1;
+}
+
+.zeus-contain {
+   display: flex;
+
+}
+
+.zeus-content {
+   display: flex;
+   align-items: center;
+   max-width: 100%;
+   max-height: 50%;
+   margin-bottom: 11rem;
+}
+
+.zeus-content h2 {
+   font-size: 87px;
+   font-family: 'Noto Sans', sans-serif;
+   line-height: 1;
+   max-width: 79%;
+}
+
+.zeus-logo-img {
+   width: 100%;
+}
+.zeus-sec {
+   margin: 4rem 0rem;
+   padding: 0rem 4rem;
+   /* position: relative; */
+}
+
 /* responsive */
 
 
@@ -1811,21 +1847,25 @@ section.vape-section {
    }
 
    .e-liq-hover:hover .e-liq-side-menu {
-       position: static;
+      position: static;
    }
+
    .coffee-hover {
       position: relative;
    }
+
    .coffee-side-menu a {
       display: none;
    }
+
    .coffee-hover:hover .coffee-side-menu a {
       display: block;
    }
+
    .coffee-hover:hover .coffee-side-menu {
       position: static;
    }
-   
+
    .active-black a {
       background-color: black;
    }
