@@ -1723,6 +1723,7 @@ section.vape-section {
 .zeus-logo-img {
    width: 100%;
 }
+
 .zeus-sec {
    margin: 4rem 0rem;
    padding: 0rem 4rem;
@@ -1773,6 +1774,10 @@ section.vape-section {
 
    nav.topnav.responsive>ul>li:hover {
       background-color: #B99A33;
+   }
+
+   nav>ul>li a:hover {
+      color: white;
    }
 
    nav.topnav.responsive ul ul {
@@ -1868,6 +1873,7 @@ section.vape-section {
 
    .active-black a {
       background-color: black;
+      color: white;
    }
 
    .header-transparent nav.topnav.responsive li.active-black a {
