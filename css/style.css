@@ -1730,6 +1730,7 @@ section.vape-section {
    /* position: relative; */
 }
 
+
 /* responsive */
 
 
@@ -2333,6 +2334,31 @@ section.vape-section {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
    }
+
+   .zeus-content h2 {
+      font-size: 60px;
+      max-width: 100%;
+   }
+
+   .zeus-section {
+      margin: 1rem 0rem;
+      padding: 0rem 1rem;
+   }
+
+   .rose-gem-header.zeus h2 {
+      font-size: 52px;
+   }
+
+   .zeus-sec {
+      margin: 4rem 0rem;
+      padding: 0rem 1rem;
+   }
+
+   .zeus-content {
+      margin-bottom: 0rem;
+   }
+
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -2889,6 +2915,15 @@ section.vape-section {
       width: 50%;
 
    }
+
+   .zeus-content h2 {
+      font-size: 45px;
+   }
+
+   .rose-gem-header.zeus h2 {
+      font-size: 33px;
+
+   }
 }
 
 
@@ -2991,6 +3026,10 @@ section.vape-section {
 
    .aroma-items.dr-img.gr-img img {
       width: 8%;
+   }
+
+   .zeus-content h2 {
+      font-size: 40px;
    }
 
 }
@@ -3152,6 +3191,14 @@ section.vape-section {
    .aroma-items.rose-items img {
       width: 90%;
    }
+
+   .zeus-content h2 {
+      font-size: 30px;
+   }
+
+   .rose-gems-para p {
+      text-align: justify;
+   }
 }
 
 @media only screen and (max-width: 375px) {
@@ -3195,6 +3242,9 @@ section.vape-section {
       font-size: 18px;
       text-align: justify;
    }
+   .rose-gem-header.zeus h2 {
+      font-size: 32px;
+  }
 }
 
 
